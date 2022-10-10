@@ -20,7 +20,7 @@ app.post("/", function(req, res){
   https.get(url, function(response){
     response.on("data", function(data){
       const weatherData = JSON.parse(data);
-      const temp = weatherData.main.temp;
+      const temper = weatherData.main.temp;
       const weatherDescription = weatherData.weather[0].description;
       const icon = weatherData.weather[0].icon;
 
@@ -28,9 +28,9 @@ app.post("/", function(req, res){
 
       res.write('<head><meta charset="utf-8"><title>Weather App</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><link href="styles.css" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"></head>');
       res.write('<body><div class="heading">')
-      res.write("<h1>The temperature in " + query + " is " + temp +  " degrees Celsius.</h1>");
+      res.write("<h1>The temperature in " + query + " is " + temper+  " degrees Celsius.</h1>");
       res.write("<h2>The weather is curently: " + weatherDescription + ".</h2>");
-    
+
       res.write("<img class='vert-move weather-image' src=" + imageURL + ">");
 
       res.write('<p class="lead"><button class="btn btn-dark btn-lg home-button" type="submit" onclick="history.back()" name="button">Go To Homepage</button></p>');
