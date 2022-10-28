@@ -24,7 +24,7 @@ h6{
     background-color: #7895B2;
     outline-color: transparent;
     outline-style:solid;
-    box-shadow: 0 0 0 4px #E8DFCA;
+    box-shadow: 0 0 0 4px #333333;
     transition: 0.7s;
 }
 
@@ -84,7 +84,7 @@ h6{
 
 .foot {
   text-align: center;
-  padding-bottom: 10%;
+  padding-bottom: 0%;
   position: relative;
 
 }
@@ -92,13 +92,13 @@ h6{
 .top-cloud {
   position: absolute;
   right: 20%;
-  top: 10%;
+  top: 8%;
 }
 
 .bottom-cloud {
   position: absolute;
   left: 20%;
-  bottom: 75%;
+  bottom: 80%;
 }
 .social-icon {
   margin: 40px 20px;
@@ -114,6 +114,7 @@ img.vert-move {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
+
 
 @-webkit-keyframes mover {
   0% {
