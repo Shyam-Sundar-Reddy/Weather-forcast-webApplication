@@ -84,7 +84,7 @@ h6{
 
 .foot {
   text-align: center;
-  padding-bottom: 0%;
+  padding-bottom: 5%;
   position: relative;
 
 }
@@ -92,7 +92,7 @@ h6{
 .top-cloud {
   position: absolute;
   right: 20%;
-  top: 8%;
+  top: 5%;
 }
 
 .bottom-cloud {
