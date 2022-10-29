@@ -33,7 +33,7 @@ app.post("/", function(req, res){
 
       res.write("<img class='vert-move weather-image' src=" + imageURL + ">");
 
-      res.write('<p class="lead"><button class="btn btn-dark btn-lg home-button" type="submit" onclick="history.back()" name="button">Go To Homepage</button></p>');
+      res.write('<p class="lead"><button class="btn btn-dark btn-lg home-button" type="submit" onclick="history.back()" name="button">Search other city</button></p>');
       res.write("</div></body>")
       res.send();
     });
