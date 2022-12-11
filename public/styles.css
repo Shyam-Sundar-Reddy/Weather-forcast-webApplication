@@ -135,3 +135,21 @@ img.vert-move {
     transform: translateY(-15px);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .foot {
+    text-align: center;
+    
+  
+    
+  
+  }
+  .searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 450px;
+    caret-color: red;
+    transition: width 0.4s linear;
+  }
+}
+
+
